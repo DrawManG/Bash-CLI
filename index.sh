@@ -41,7 +41,7 @@ do
         fi
     fi
     
-    if 
+    
     
 
     sleep 60
