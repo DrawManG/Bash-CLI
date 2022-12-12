@@ -19,11 +19,12 @@ export git_Path='/home/drawmang/Музыка/khala-client-cli'
 cd $git_Path
 
 export LANGISH=$(echo $LANG)
-export git_Result=$(git pull)
 
+git config --global --add safe.directory $git_Path
 while :
 
 do
+    export git_Result=$(git pull)
     if [[ $LANGISH = 'ru_RU.UTF-8' ]]; then
         #code script for RUS
         
